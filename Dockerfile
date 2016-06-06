@@ -1,7 +1,5 @@
 FROM golang:1.7-alpine
 
-RUN apk add --no-cache --update gcc
-
 ENV GOOS=darwin GOARCH=386
 RUN go install -v std
 ENV GOOS=darwin GOARCH=amd64
